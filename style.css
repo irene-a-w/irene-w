@@ -84,7 +84,56 @@ body{
 	overflow: hidden;
 }
 
-.header{
+#hamburger-icon{
+	margin: auto 0;
+	display: none;
+	cursor: pointer;
+}
+
+#hamburger-icon div {
+	width: 35px;
+	height: 3px;
+	background-color: white;
+	margin: 6px 0;
+	transition: 0.4s;
+  }
+
+.open .bar1 {
+-webkit-transform: rotate(-45deg) translate(-6px, 6px);
+transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+opacity: 0;
+}
+
+.open .bar3 {
+-webkit-transform: rotate(45deg) translate(-6px, -8px);
+transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+}
+
+.mobile-menu {
+display: none;
+position: absolute;
+top: 50px;
+left: 0;
+height: calc(100vh - 50px);
+width: 100%;
+}
+
+.mobile-menu li {
+margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px){
+	.header{
 	outline: 5px dashed #eb6ca1;
 	border-radius: 25px;
 	margin-bottom: 10px;
@@ -93,7 +142,13 @@ body{
 	font-size: 25px;
 	display: grid;
 	place-items: center;
+	}
+
+	#hamburger-icon {
+		display: block;
+	  }
 }
+
 
 h2{
 	width: 6ch;
@@ -135,15 +190,27 @@ h2{
 }
 }
 
-.info{
-	outline: 5px dashed #eb6ca1;
-	border-radius: 25px;
-	margin-top: 10px;
-	padding: 40px 40px 40px 40px;
-	width: 600px;
-	font-size: 20px;
+@media screen and (min-width: 600px){
+	.info{
+		outline: 5px dashed #eb6ca1;
+		border-radius: 25px;
+		margin-top: 10px;
+		padding: 40px 40px 40px 40px;
+		width: 600px;
+		font-size: 20px;
+	}	
 }
 
+@media screen and (max-width: 600px){
+	.info{
+		outline: 2px dashed #eb6ca1;
+		border-radius: 15px;
+		margin-top: 10px;
+		padding: 40px 40px 40px 40px;
+		width: 400px;
+		font-size: 10px;
+	}	
+}
 
 
 .project1{
