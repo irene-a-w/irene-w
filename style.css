@@ -214,9 +214,9 @@ h2{
 @media screen and (max-width: 600px){
 	.info{
 		outline: 2px dashed #eb6ca1;
-		border-radius: 15px;
+		border-radius: 25px;
 		margin-top: 10px;
-		padding: 40px 40px 40px 40px;
+		padding: 20px 20px 20px 20px;
 		width: 350px;
 		font-size: 7px;
 	}	
