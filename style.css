@@ -132,21 +132,18 @@ width: 100%;
 margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 600px){
+
+@media screen and (max-width: 600px){
 	.header{
-	outline: 5px dashed #eb6ca1;
+	outline: 2px dashed #eb6ca1;
 	border-radius: 25px;
 	margin-bottom: 10px;
 	padding: 10px 10px 10px 10px;
-	width: 400px;
+	width: 350px;
 	font-size: 25px;
 	display: grid;
 	place-items: center;
 	}
-
-	#hamburger-icon {
-		display: block;
-	  }
 }
 
 
@@ -207,8 +204,8 @@ h2{
 		border-radius: 15px;
 		margin-top: 10px;
 		padding: 40px 40px 40px 40px;
-		width: 400px;
-		font-size: 10px;
+		width: 350px;
+		font-size: 7px;
 	}	
 }
 
