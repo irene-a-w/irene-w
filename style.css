@@ -139,7 +139,20 @@ margin-bottom: 10px;
 	border-radius: 25px;
 	margin-bottom: 10px;
 	padding: 10px 10px 10px 10px;
-	width: 350px;
+	width: 300px;
+	font-size: 25px;
+	display: grid;
+	place-items: center;
+	}
+}
+
+@media screen and (min-width: 600px){
+	.header{
+	outline: 5px dashed #eb6ca1;
+	border-radius: 25px;
+	margin-bottom: 10px;
+	padding: 10px 10px 10px 10px;
+	width: 400px;
 	font-size: 25px;
 	display: grid;
 	place-items: center;
